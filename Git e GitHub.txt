@@ -1,0 +1,82 @@
+GIT e GIThub
+
+
+São tecnologias completmentares.
+
+1-Cotrole de versão (Git)
+2-armazenamento em nuvem/remoto (GitHub)
+3-trabalho em equipe
+4-melhorar seu código
+5-reconhecimento
+
+
+Command Line Interface (CLI)
+
+
+Comandos no Windows:
+
+cd >> acessa o diretorio C
+cd .. >> volta ao diretorio acima
+dir >> lista as pastas
+cls >> limpa o terminal (CTRL + L)
+botao TAB >>auto completa o nome de uma pasta
+mkdir >> cria uma pasta 
+del >> deleta o conteudo de uma pasta
+rmdir >> deleta uma pasta
+
+
+> SHA1 (Secure Hash Algorithm) - conjunto de funções criptográficas projetadas pela NSA. a encriptação gera um conjunto de caracteres identificadores com 40 digitos.qualquer alteração no arquivo gera um novo conjunto de caracteres.
+
+
+> Objetos fundamentais:
+
+BLOBS: armazena o tipo, tamanho do arquivo, \0, conteudo do arquivo (metadados);
+
+TREES: armazenam Blob, SHA1, nome do 	arquivo, \0). pode apontar para blobs ou outras trees (mudar um arquivo, muda toda estrutura)
+
+COMMIT: aponta para uma TREE, outro Commit, autor, mensagem (explicando o conteúdo), timestamp. também possui SHA1. único para cada autor;
+
+
+> Sistema distribuido: 
+
+> Segurança: 
+
+
+
+CHAVES SSH: forma de estabelecer uma conexão criptografada entre duas maquinas.
+
+comando gerar chave (Git Bash): ssh-keygen -t ed25519 -c leompts@msn.com
+
+
+TOKEN DE ACESSO PESSOAL: utiliza o protocolo http.
+
+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
+
+
+
+git init
+
+git config --global user.email "leompts@msn.com"
+
+git config -- user.name Leonardo
+
+git config --list >>mostra as configs do git remoto
+
+git add *
+
+git commit -m "digitar texto"
+
+git status >> mostra a situação do arquivo
+
+git config --global --unset user.email
+git config --global --unset user.name
+>>comandos excluem atributo email e username do Git
+
+
+** arquivo untracked ao receber comando "git add" vai do "working directory" para a "staging area"
+
+
+** move arquivo da staging area (ao comandar commit) para local repository (todo arquivo tem q estar "comitado")
+
+
+
